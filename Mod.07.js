@@ -6,7 +6,7 @@ let dice = [];
 while (true) {
     let roll = diceRoll();
     dice.push(roll);
-    if (roll === dices) {
+    if (roll === 21 ) {
         break;
     }
 }

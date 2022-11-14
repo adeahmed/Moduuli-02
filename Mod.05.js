@@ -10,4 +10,8 @@
      }
      numbers.push(number);
  }
-console.log(( numbers.sort( (a, b) => a > b ? 1 : -1) ));
+console.log(numbers.sort((a, b) => a > b ? 1 : -1));
+const nr = numbers.map(items => `<h2>${numbers}</h2>`).sort( (a, b) => a > b ? 1 : -1);
+const result = document.querySelector('#result');
+result.innerHTML = nr.join(" "); 
+

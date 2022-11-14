@@ -8,7 +8,9 @@ while (number != 0) {
     number = parseInt(prompt("Enter number: "));
     numbers.push(number);
 }   
-  (document.body.textContent = ( numbers.sort( (a, b) => a > b ? 1 : -1) ));
+const nr = numbers.sort( (a, b) => a - b).map(items => `<h2>${items}</h2>`)
+const result = document.querySelector('#result');
+result.innerHTML = nr.join(""); 
 
 
 

@@ -1,21 +1,18 @@
-// Write a function that returns a random dice roll between 1 and 6.
- //The function should not have any parameters. Write a main program that rolls the dice until the result is 6.
- //The main program should print out the result of each roll in an unordered list
+let dices = parseInt(prompt("How many dices do you want to roll?"));
+ function diceRoll(diceEyes) {
+    return Math.floor(Math.random()* dices) ;
+}
+let dice = [];
+while (true) {
+    let roll = diceRoll();
+    dice.push(roll);
+    if (roll === dices) {
+        break;
+    }
+}
+const result = document.querySelector('#result');
+result.innerHTML = dice.map(items => `<li>${items}</li>`).join(" ");
 
-    function diceRoll() {
-        return Math.floor(Math.random() * 6) + 1;
-    }
-    let dice = [];
-    while (true) {
-        let roll = diceRoll();
-        dice.push(roll);
-        if (roll === 6) {
-            break;
-        }
-    }
-    const result = document.querySelector('#result');
-    result.innerHTML = dice.map(items => `<li>${items}</li>`).join(" ");
-    
 
 
 
@@ -132,14 +129,14 @@
 
 
 
-    // const ages = people.map((person) => person.age * 2);
-    // console.log(ages);    
-    
-    // const ages = people.map((person) => {
-    //     return person.age * 2;
+// const ages = people.map((person) => person.age * 2);
+// console.log(ages);    
 
-    // }); 
-    // console.log(ages);
+// const ages = people.map((person) => {
+//     return person.age * 2;
+
+// }); 
+// console.log(ages);
 
 
 // const div = document.querySelector('#result');

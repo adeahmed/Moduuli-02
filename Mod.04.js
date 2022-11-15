@@ -2,15 +2,16 @@
 //The given numbers are printed in the console from the largest to the smallest
 
 let numbers = [];   
-let number = 1;     
-
-while (number != 0) {
+while (true) {
     number = parseInt(prompt("Enter number: "));
+    if (number === 0) break;
     numbers.push(number);
+    
+
 }   
-const nr = numbers.sort( (a, b) => a - b).map(items => `<h2>${items}</h2>`)
-const result = document.querySelector('#result');
-result.innerHTML = nr.join(""); 
+numbers.sort((a, b) => b - a);
+console.log(numbers);
+
 
 
 

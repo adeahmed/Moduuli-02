@@ -3,7 +3,7 @@ function even(nr) {
     return nr.filter(item => item % 2 === 0);
     console.log(nr);
 }
-const result = document.querySelector('#result');
+const result = document.querySelector('ul');
 result.innerHTML = even(nr).map(items => `<li>${items}</li>`).join(" "); 
 
 

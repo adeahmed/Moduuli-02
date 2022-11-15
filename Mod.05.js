@@ -8,7 +8,10 @@
      }
      numbers.push(number);
  }
-const nr = numbers.sort( (a, b) => a - b).map(items => `<h2>${items}</h2>`)
-const result = document.querySelector('#result');
-result.innerHTML = nr.join(" "); 
+const nr = numbers.sort( (a, b) => a - b).map(items => `<li>${items}</li>`)
+console.log(numbers);
+const result = document.querySelector('ul');
+result.innerHTML = nr.join(" ");
+
+
 

@@ -11,6 +11,6 @@ function concatNames(list) {
     return names;
 }
 
-const ls = list.concat().join(" ");
+const ls = list.concat().join("");
 const result = document.querySelector('#result').innerHTML = ls; 
 

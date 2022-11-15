@@ -10,6 +10,6 @@ while (true) {
         break;
     }
 }
-const result = document.querySelector('#result');
+const result = document.querySelector('ul');
 result.innerHTML = dice.map(items => `<li>${items}</li>`).join(" ");
 

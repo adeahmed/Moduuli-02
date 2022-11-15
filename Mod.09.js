@@ -4,6 +4,6 @@ function even(nr) {
     console.log(nr);
 }
 const result = document.querySelector('#result');
-result.innerHTML = even(nr).map(items => `<li>${items}</li>`).join(" ");
+result.innerHTML = even(nr).map(items => `<li>${items}</li>`).join(" "); 
 
 

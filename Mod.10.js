@@ -34,7 +34,10 @@ function getWinner(people) {
     return winner.name;
 }
 
-
+getWinner(people);
+vote(people, 'ellie');
+getWinner(people);
+vote(people, 'frank');
 
 
 

@@ -1,9 +1,10 @@
 
-let numbers = [];   
+const numbers = [];
 for (let i = 0; i < 5; i++) {
-    numbers[i] = prompt("Enter number: ");
-    console.log(numbers[i]);
+    let number = +prompt("Enter number:");
+    numbers.push(number);
 }
-for (let i = numbers.length - 1; i >= 0; i--) {
-    console.log(numbers[i]);
-}
+const result = document.querySelector('ul');
+result.innerHTML = numbers.sort((a,b) => a > b ? 1: -1).map(items => `<li>${items}</li>`).join(" ");
+console.log(numbers);
+

@@ -1,11 +1,6 @@
-const numberOfNames = +prompt("How many participants do you want?");
 
-for(let i = 0; i < numberOfNames; i++) {
-  const participantsName = prompt("Give a name");
-  const li = document.createElement("li")
-  li.textContent = participantsName;
-  document.querySelector("ol").append(li);
+const numberOfNames = +prompt("How many names do you want to enter?");
+for (let i = 0; i < numberOfNames; i++) {
+    let name = prompt("Enter name:");
+    names.push(name);
 }
-
-
-

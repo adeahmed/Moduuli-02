@@ -1,11 +1,10 @@
+// Write a program that asks for the names of six dogs. The program prints dog names to unordered list <ul> in reverse alphabetical order.
 
-let dogs = [];
+const dogs = [];
 for (let i = 0; i < 6; i++) {
-    const dogNames = prompt("Enter name of dog: ");
-    dogs.push(dogNames);
-    const nr = dogs.sort( (a, b) => a - b).map(items => `<li>${items}</li>`)
-    const result = document.querySelector('ul');
-    result.innerHTML = nr.join(" ");
+    let dog = prompt("Enter dog name:");
+    dogs.push(dog);
 }
-
+const result = document.querySelector('ul');
+result.innerHTML = dogs.sort((a,b) => a > b ? 1: -1).map(items => `<li>${items}</li>`).join(" ");
 

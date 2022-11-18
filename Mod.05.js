@@ -1,5 +1,4 @@
-
- let numbers = [];
+let numbers = [];
  while (true) {
      let number = parseInt(prompt("Enter number: "));
      if (numbers.includes(number)) {
